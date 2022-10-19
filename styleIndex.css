@@ -58,6 +58,7 @@ body{
 .containerRegras{
     color: var(--colorDesfoque);
     margin: 20px;
+    margin-bottom: 100px;
 }
 .containerRegras p{
     font-size: 1.2em;
