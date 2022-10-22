@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compre seu ticket</title>
     <link rel="stylesheet" href="styleIndex.css">
+
 </head>
 <body>
     <div style="display: flex; flex-direction: column;">
-        <div class="containerImg">
-            <img src="https://i.pinimg.com/originals/ac/01/5f/ac015f55e0dd9eb32ceaef3e8729df9a.jpg">
+        <div class="containerImg tremida">
+            <div class="opacidade imag"></div>
         </div>
         <div class="shadow"></div>
     </div>
@@ -25,7 +26,13 @@
     </div>
 
     <div class="containerRegras">
-        <p>👻 🎃 🎉 🎃 👻</p>
+        <span class="containerEmoji">
+            <p class="animacaoSobe">👻</p>
+            <p class="animacaoDesce">🎃</p>
+            <p>🎉</p>
+            <p class="animacaoDesce">🎃</p>
+            <p class="animacaoSobe">👻</p>
+        </span>
 
         <p>Leia com atenção!</p>
         <ul>
@@ -38,8 +45,14 @@
         </ul>
     </div>
 
-    <div class="contanierBotaoDeCompra">
-        <button>BUY TICKET</button>
+    <div class="containerContato">
+        <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+        </a>
+    </div>
+    
+    <div class="contanierBotaoDeCompra btnAparecendo">
+        <button class="maiusculas">comprar agora</button>
     </div>
 
 </body>
