@@ -217,6 +217,7 @@ body{
 }
 .containerEmoji{
     display: flex;
+    flex-direction: row;
 }
 .containerEmoji p{
     margin-right: 10px;
