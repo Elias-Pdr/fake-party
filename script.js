@@ -2,8 +2,6 @@ function btnComprar(){
     window.location.href = "telaPagamento.html"
 }
 
-
-
 document.getElementById("tel").addEventListener("keypress", function(e){
     telValueLength = document.getElementById("tel").value.length;
     console.log(telValueLength);
@@ -11,7 +9,6 @@ document.getElementById("tel").addEventListener("keypress", function(e){
         document.getElementById("tel").value = "(" + document.getElementById("tel").value + ") "
     }
 })
-
 
 function mudarCorBtnCompra(bnt){
     var listIconPay = document.querySelectorAll(".iconPay");
