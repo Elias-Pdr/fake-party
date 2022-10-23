@@ -43,7 +43,7 @@ header h1{
 }
 .inputBox input{
     width: 100%;
-    padding: 10px;
+    padding: 14px;
     border: 1px solid black;
     background: none;
     border-radius: 5px;
@@ -52,21 +52,32 @@ header h1{
     font-size: 1em;
     margin-bottom: 26px;
 }
+
 .inputBox span{
     position: absolute;
     left: 0;
-    padding: 10px;
+    padding: 14px;
     pointer-events: none;
     font-size: 1em;
     color: black;
     transition: 0.5s;
 }
+
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span{
     transform: translateX(10px) translateY(-7px);
     font-size: 0.65em;
     padding: 2px 10px;
     background-color: aliceblue;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.containerPay .inputBox input:valid ~ span,
+.containerPay .inputBox input:focus ~ span{
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 2px 10px;
+    background-color: hsl(208deg 48% 94%);
     text-transform: uppercase;
     border-radius: 5px;
 }
@@ -83,9 +94,9 @@ header h1{
     margin-bottom: 10px;
 }
 .informacoesCompra{
-    background-color: hsla(0, 0%, 0%, 0.03);
+    background-color: hsl(208deg 48% 94%);
     width: 100%;
-    margin: auto;
+    margin: 50px auto;
     padding: 20px 0px;
 }
 .informacoesPessoais >p{
@@ -205,8 +216,7 @@ header h1{
 .containerPay{
     display: none;
     width: var(--larguraComum);
-    margin: auto;
-    margin-top: 20px;
+    margin: 30px auto 0px auto;
 }
 .containerPay p{
     margin-bottom: 10px;
@@ -215,9 +225,29 @@ header h1{
 .containerPay p:nth-child(2){
     margin-bottom: 0px;
 }
+.containerPay .inputBox,
+.containerPay .containerValiCog{
+    width: 100%;
+}
 hr{
     height: 2px;
     width: 100%;
-    background-color: hsla(0, 0%, 0%, 0.03);
+    background-color: hsl(208deg 48% 94%);
     display: none;
+}
+.inputBox span{
+    color: #666;
+}
+.containerValiCog{
+    display: flex;
+}
+.containerValiCog input{
+    margin: 0px;
+}
+
+.containerValiCog .inputBox:nth-child(1){
+    margin: 0px 5px 0px 0px;
+}
+.containerValiCog .inputBox:nth-child(2){
+    margin: 0px 0px 0px 5px;
 }

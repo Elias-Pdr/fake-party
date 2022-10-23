@@ -29,3 +29,19 @@ function mudarCorBtnCompra(bnt, label){
     document.querySelector(label).style.borderRadius = '10px 10px 0px 0px';
    
 }
+
+document.getElementById("inputNumberCard").addEventListener("keypress", function(e){
+    inputNumberCardValueLength = document.getElementById("inputNumberCard").value.length;
+
+    if (inputNumberCardValueLength === 4 || inputNumberCardValueLength === 9 || inputNumberCardValueLength === 14) {
+        document.getElementById("inputNumberCard").value +=  " "
+    }
+})
+
+document.getElementById("inputValidadeCardCard").addEventListener("keypress", function(e){
+    inputValidadeCardCardValueLength = document.getElementById("inputValidadeCardCard").value.length;
+
+    if (inputValidadeCardCardValueLength === 2 ) {
+        document.getElementById("inputValidadeCardCard").value +=  "/"
+    }
+})
