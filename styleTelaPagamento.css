@@ -1,0 +1,208 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    border: none;
+    font-family: Helvetica, sans-serif;
+}
+body{
+    background-color: aliceblue;
+    overflow-x: hidden;
+    max-width: 800px;
+}
+header{
+    width: 100%;
+    margin: auto;
+    padding: 10px 0px;
+    color: aliceblue;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+    background-color: aliceblue;
+    box-shadow: 0px -5px 15px -1px #00000047;
+    margin-bottom: 26px;
+
+}
+header h1{
+    font-size: 1em;
+    font-weight: 900;
+    color: black;
+}
+.maiusculas{
+    text-transform: uppercase;
+}
+
+
+
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: var(--larguraComum);
+    margin: auto;
+}
+.inputBox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    background: none;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    font-size: 1em;
+    margin-bottom: 26px;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: black;
+    transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-color: aliceblue;
+    text-transform: uppercase;
+
+}
+.inputBox input:focus ~ span{
+    color: var(--colorSecundary);
+}
+.inputBox input:focus{
+    border: 1px solid var(--colorSecundary);
+
+}
+
+
+.informacoesCompra,
+.informacoesPessoais{
+    margin: 20px 0px;
+
+}
+.informacoesCompra > p,
+.informacoesPessoais >p{
+    text-transform: none;
+    width: var(--larguraComum);
+    margin: 20px auto;
+
+}
+
+.ccGZTm {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: overlay;
+}
+.gLqOuj.duplo {
+    grid-column: span 2 / auto;
+    opacity: 1;
+}
+.gLqOuj {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(102, 206, 2);
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    border: 1px solid rgb(255, 255, 255);
+    width: 100%;
+}
+.ipmdye {
+    width: 100%;
+    --iconsHeight: 1rem;
+    border: none;
+    grid-template-rows: 50px;
+    display: grid;
+    grid-template-areas:
+        "icon"
+        "title";
+    margin: 0px 10px;
+    padding-bottom: 0.5rem;
+    --iconsWidth: 35px;
+    --fontColor: #666;
+    cursor: pointer;
+    align-content: baseline;
+    justify-content: center;
+}
+.ipmdye:hover{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.ccGZTm input {
+    display: none;
+}
+.iwlnpv {
+    width: 100%;
+    grid-area: icon / icon / icon / icon;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    --lineBottomHeight: 3px;
+    position: relative;
+    min-height: calc(24px + calc(var(--lineBottomHeight)));
+}
+.iwlnpv::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: var(--lineBottomHeight);
+    background-color: var(--colorSecundary);
+    transition: all 150ms ease-out 0s;
+    transform: scaleX(0);
+}
+.ipmdye .payment-icon path, .ipmdye .ame-icon, .ipmdye .payment-option-title {
+    transition: all 150ms linear 0s;
+
+    text-align: center;
+}
+.iwlnpv > .payment-icon, .iwlnpv > .ame-icon {
+    height: 24px;
+    width: 24px;
+}
+.ccGZTm input[type="radio"]:checked ~ .payment-option-title {
+    color: var(--colorSecundary);
+}
+.gLqOui {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    color: rgb(102, 206, 2);
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    font-weight: normal;
+    width: 100%;
+}
+.gLqOui > span {
+    text-transform: initial;
+    margin-left: 4px;
+}
+.containerPay{
+    display: none;
+    width: var(--larguraComum);
+    margin: 20px auto;
+}
+.containerPay p{
+    margin-bottom: 10px;
+    text-align: center;
+}
