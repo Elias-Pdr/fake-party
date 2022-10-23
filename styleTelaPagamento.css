@@ -21,7 +21,6 @@ header{
     font-family: 'Kanit', sans-serif;
     background-color: aliceblue;
     box-shadow: 0px -5px 15px -1px #00000047;
-    margin-bottom: 26px;
 
 }
 header h1{
@@ -84,14 +83,20 @@ header h1{
 }
 .informacoesCompra{
     background-color: hsla(0, 0%, 0%, 0.03);
-    width: var(--larguraComum);
+    width: 100%;
     margin: auto;
+    padding: 20px 0px;
 }
-.informacoesCompra > p,
 .informacoesPessoais >p{
     text-transform: none;
     width: var(--larguraComum);
     margin: 20px auto;
+}
+.informacoesCompra > p{
+    text-transform: none;
+    width: var(--larguraComum);
+    margin: 0px auto;
+    margin-bottom: 20px;
 }
 
 .ccGZTm {
@@ -201,9 +206,13 @@ header h1{
 .containerPay{
     display: none;
     width: var(--larguraComum);
-    margin: 20px auto;
+    margin: auto;
+    margin-top: 20px;
 }
 .containerPay p{
     margin-bottom: 10px;
     text-align: center;
+}
+.containerPay p:nth-child(2){
+    margin-bottom: 0px;
 }
