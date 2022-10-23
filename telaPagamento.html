@@ -36,7 +36,7 @@
                 
             
                 
-                <label onclick="mudarCorBtnCompra('credit_card')" data-cy="paymentMenu-optionLabel__CREDIT_CARD" id="paymentMenu-optionLabel__CREDIT_CARD" class="sc-ebPQXL ipmdye">
+                <label onclick="mudarCorBtnCompra('credit_card', '.labelcredit_card')" data-cy="paymentMenu-optionLabel__CREDIT_CARD" id="paymentMenu-optionLabel__CREDIT_CARD" class="sc-ebPQXL ipmdye labelcredit_card">
                 <input type="radio" name="payment-options">
                 <div class="sc-iYsgxs iwlnpv iconsWrapper">
                 <svg id="credit_card" xmlns="http://www.w3.org/2000/svg" width="26.667" height="17.332" viewBox="0 0 26.667 17.332" class="payment-icon iconPay">
@@ -47,7 +47,7 @@
                 <span class="sc-dGBNLl dXaKHU payment-option-title false">cartão de <br> crédito</span>
                 </label>
                 
-                <label onclick="mudarCorBtnCompra('boleto')" data-cy="paymentMenu-optionLabel__BANK_SLIP" id="paymentMenu-optionLabel__BANK_SLIP" class="sc-ebPQXL ipmdye">
+                <label onclick="mudarCorBtnCompra('boleto', '.labelboleto')" data-cy="paymentMenu-optionLabel__BANK_SLIP" id="paymentMenu-optionLabel__BANK_SLIP" class="sc-ebPQXL ipmdye labelboleto">
                 <input type="radio" name="payment-options">
                 <div class="sc-iYsgxs iwlnpv iconsWrapper">
                 <svg  id="boleto" xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 28.633 19.652" class="payment-icon iconPay">
@@ -62,7 +62,7 @@
                 
                 
                 
-                <label  onclick="mudarCorBtnCompra('pix')"  data-cy="paymentMenu-optionLabel__PIX" id="paymentMenu-optionLabel__PIX" class="sc-ebPQXL ipmdye">
+                <label  onclick="mudarCorBtnCompra('pix', '.labelpix')"  data-cy="paymentMenu-optionLabel__PIX" id="paymentMenu-optionLabel__PIX" class="sc-ebPQXL ipmdye labelpix">
                 <input type="radio" name="payment-options">
                 <div class="sc-iYsgxs iwlnpv iconsWrapper">
                 <svg id="pix" viewBox="0 0 20 20" class="payment-icon iconPay">
@@ -85,6 +85,8 @@
                 <span class="sc-dGBNLl dXaKHU payment-option-title pix">pix</span>
                 </label>
             </nav>
+
+            <hr id="hr">
 
             <div id="paycredit_card" class="containerPay">
                 <p>Pagamento via cartão indisponivel no momento</p>

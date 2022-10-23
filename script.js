@@ -10,17 +10,24 @@ document.getElementById("tel").addEventListener("keypress", function(e){
     }
 })
 
-function mudarCorBtnCompra(bnt){
+function mudarCorBtnCompra(bnt, label){
     var listIconPay = document.querySelectorAll(".iconPay");
     var listContainerPay = document.querySelectorAll(".containerPay");
-    
-    console.log(listIconPay.length);
+    var listLabel = document.querySelectorAll(".ipmdye");
 
+    console.log(listLabel.length);
+    
     for (let i = 0; i < listIconPay.length; i++) {
         listIconPay[i].style.fill = "black";
         listContainerPay[i].style.display = "none";
+        listLabel[i].style.backgroundColor= 'transparent';
     }
 
     document.getElementById(bnt).style.fill = "var(--colorSecundary)";
     document.getElementById("pay" + bnt).style.display = "block";
+    document.getElementById("hr").style.display = "block";
+    
+    document.querySelector(label).style.backgroundColor = 'rgba(0, 0, 0, 0.03)';
+    document.querySelector(label).style.borderRadius = '10px 10px 0px 0px';
+   
 }

@@ -13,7 +13,7 @@ body, html{
 header{
     width: 100%;
     margin: auto;
-    padding: 10px 0px;
+    padding: 14px 0px;
     color: aliceblue;
     display: flex;
     align-items: baseline;
@@ -80,6 +80,7 @@ header h1{
 .informacoesCompra,
 .informacoesPessoais{
     padding: 5px 0px;
+    margin-bottom: 10px;
 }
 .informacoesCompra{
     background-color: hsla(0, 0%, 0%, 0.03);
@@ -141,9 +142,7 @@ header h1{
     align-content: baseline;
     justify-content: center;
 }
-.ipmdye:hover{
-    background-color: rgba(0, 0, 0, 0.03);
-}
+
 .ccGZTm input {
     display: none;
 }
@@ -215,4 +214,10 @@ header h1{
 }
 .containerPay p:nth-child(2){
     margin-bottom: 0px;
+}
+hr{
+    height: 2px;
+    width: 100%;
+    background-color: hsla(0, 0%, 0%, 0.03);
+    display: none;
 }
