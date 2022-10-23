@@ -45,3 +45,32 @@ document.getElementById("inputValidadeCardCard").addEventListener("keypress", fu
         document.getElementById("inputValidadeCardCard").value +=  "/"
     }
 })
+
+
+function numeroPessoas(n){
+    document.querySelector('.selectNumPessoas').style.display = 'none';
+    if (n == "1") {
+        document.getElementById("txtNumeroPessoas").innerHTML = "Para " + n + " pessoa";
+        document.getElementById("inputNameSolo").style.display = "block"
+        document.getElementById("inputNameSquad").style.display = "none"
+
+    }else{
+        document.getElementById("txtNumeroPessoas").innerHTML = "Para " + n + " pessoas";
+        document.getElementById("inputNameSolo").style.display = "none"
+        document.getElementById("inputNameSquad").style.display = "block"
+
+        var listaInputName = document.querySelectorAll(".inputNameSquad")
+
+        console.log("listaInputName: " + listaInputName.length);
+        console.log(typeof(parseInt(n)));
+
+        for (let i1 = 0; i1 < listaInputName.length; i1++) {
+            listaInputName[i1].style.display= "none"
+            
+        }
+        for (let i = 0; i < parseInt(n); i++) {
+            listaInputName[i].style.display = "block"
+            
+        }
+    }
+}

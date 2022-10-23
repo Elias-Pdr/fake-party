@@ -34,7 +34,8 @@ header h1{
 
 
 
-.inputBox{
+.inputBox,
+.containerquantidade{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -53,7 +54,47 @@ header h1{
     margin-bottom: 26px;
 }
 
-.inputBox span{
+.containerquantidade .select{
+    width: 100%;
+    padding: 0px 14px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    font-size: 1em;
+    background: aliceblue;
+
+}
+.containerquantidade input{
+    padding: 14px;
+    width: 100%;
+    outline: none;
+    background: none;
+
+}
+.selectNumPessoas{
+    width: 93%;
+    margin: auto;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 0px 0px 10px 10px;
+    display: none;
+}
+.selectNumPessoas p{
+    padding: 14px;
+    border-bottom: 1px solid #00000047;
+}
+.selectNumPessoas p:hover{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+.selectNumPessoas p:last-child{
+    border-bottom: none;
+}
+
+
+
+
+
+.inputBox span,
+.containerquantidade span{
     position: absolute;
     left: 0;
     padding: 14px;
@@ -96,10 +137,11 @@ header h1{
 .informacoesCompra{
     background-color: hsl(208deg 48% 94%);
     width: 100%;
-    margin: 50px auto;
+    margin: 0px auto 50px auto;
     padding: 20px 0px;
 }
-.informacoesPessoais >p{
+.informacoesPessoais >p,
+.containerNomes > p{
     text-transform: none;
     width: var(--larguraComum);
     margin: 20px auto;
@@ -235,7 +277,8 @@ hr{
     background-color: hsl(208deg 48% 94%);
     display: none;
 }
-.inputBox span{
+.inputBox span,
+.containerquantidade span{
     color: #666;
 }
 .containerValiCog{
@@ -250,4 +293,22 @@ hr{
 }
 .containerValiCog .inputBox:nth-child(2){
     margin: 0px 0px 0px 5px;
+}
+
+
+.containerquantidade{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: var(--larguraComum);
+    margin: 30px auto 0px auto;
+
+}
+.containerquantidade input{
+    margin: 0px;
+
+}
+
+.containerNomes{
+    display: none;
 }

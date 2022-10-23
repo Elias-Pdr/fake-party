@@ -12,14 +12,29 @@
     <header>
         <h1 class="maiusculas">fake party</h1>
     </header>
+    <div class="containerquantidade">
+        <div class="select">
+            <input type="button" onclick="document.querySelector('.selectNumPessoas').style.display = 'block'">
+        </div>
+        <span id="txtNumeroPessoas">Ingressos para quantas pessoas?</span>
+    </div>
+    <div class="selectNumPessoas">
+        <p onclick="numeroPessoas('1')">1 pessoa</p>
+        <p onclick="numeroPessoas('2')">2 pessoas</p>
+        <p onclick="numeroPessoas('3')">3 pessoas</p>
+        <p onclick="numeroPessoas('4')">4 pessoas</p>
+        <p onclick="numeroPessoas('5')">5 pessoas</p>
+        <p onclick="numeroPessoas('6')">6 pessoas</p>
+    </div>
     <main>
         <div class="informacoesPessoais">
             <p>Informações pessoais</p>
 
-            <div class="inputBox">
+            <div class="inputBox" id="inputNameSolo">
                 <input type="text" required="required">
                 <span>Nome Completo</span>
             </div>
+
             <div class="inputBox">
                 <input type="tel" required="required" id="tel">
                 <span>Celular</span>
@@ -27,6 +42,34 @@
             <div class="inputBox">
                 <input type="text" required="required">
                 <span>E-mail</span>
+            </div>
+        </div>
+        <div class="containerNomes" id="inputNameSquad">
+            <p>Lista de nomes</p>
+
+            <div class="inputBox inputNameSquad">
+                <input type="text" required="required">
+                <span>Nome Completo 1</span>
+            </div>
+            <div class="inputBox inputNameSquad">
+                <input type="text" required="required">
+                <span>Nome Completo 2</span>
+            </div>
+            <div class="inputBox inputNameSquad">
+                <input type="text" required="required">
+                <span>Nome Completo 3</span>
+            </div>
+            <div class="inputBox inputNameSquad">
+                <input type="text" required="required">
+                <span>Nome Completo 4</span>
+            </div>
+            <div class="inputBox inputNameSquad">
+                <input type="text" required="required">
+                <span>Nome Completo 5</span>
+            </div>
+            <div class="inputBox inputNameSquad">
+                <input type="text" required="required">
+                <span>Nome Completo 6</span>
             </div>
         </div>
         <div class="informacoesCompra">
@@ -121,7 +164,12 @@
             </div>
         </div>
         <footer>
-            500r$
+
+
+            <div>
+                <p>Total:</p>
+                <p>R$ 20,00</p>
+            </div>
         </footer>
 
         <p style="text-align: center; position: fixed; width: 100%; bottom: 10px;">
