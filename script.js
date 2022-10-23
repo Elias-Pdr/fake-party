@@ -14,8 +14,6 @@ function mudarCorBtnCompra(bnt, label){
     var listIconPay = document.querySelectorAll(".iconPay");
     var listContainerPay = document.querySelectorAll(".containerPay");
     var listLabel = document.querySelectorAll(".ipmdye");
-
-    console.log(listLabel.length);
     
     for (let i = 0; i < listIconPay.length; i++) {
         listIconPay[i].style.fill = "black";
