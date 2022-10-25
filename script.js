@@ -1,4 +1,5 @@
 
+
 function btnComprar(){
     window.location.href = "telaPagamento.html"
 }
@@ -50,7 +51,7 @@ document.getElementById("inputValidadeCardCard").addEventListener("keypress", fu
 function numeroPessoas(n){
     document.querySelector('.selectNumPessoas').style.display = 'none';
     document.querySelector('#main').style.display = 'block';
-    
+
     document.getElementById('resumo_preco').innerHTML = "R$" + n + "0,00"
 
     if (n == "1") {
