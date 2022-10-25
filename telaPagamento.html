@@ -26,12 +26,12 @@
         <p onclick="numeroPessoas('5')">5 pessoas</p>
         <p onclick="numeroPessoas('6')">6 pessoas</p>
     </div>
-    <main>
+    <main id="main">
         <div class="informacoesPessoais">
             <p>Informações pessoais</p>
 
-            <div class="inputBox" id="inputNameSolo">
-                <input type="text" required="required">
+            <div class="inputBox" id="containerInputNameSolo">
+                <input type="text" required="required" id="inputNameSolo">
                 <span>Nome Completo</span>
             </div>
 
@@ -44,32 +44,44 @@
                 <span>E-mail</span>
             </div>
         </div>
-        <div class="containerNomes" id="inputNameSquad">
+        <div class="containerNomes" id="containerInputNameSquad">
             <p>Lista de nomes</p>
 
-            <div class="inputBox inputNameSquad">
-                <input type="text" required="required">
+            <div class="inputBox containerInputNameSquad">
+                <input type="text" required="required" id="inputNameSquad">
                 <span>Nome Completo 1</span>
             </div>
-            <div class="inputBox inputNameSquad">
-                <input type="text" required="required">
+            <div class="inputBox containerInputNameSquad">
+                <input type="text" required="required" id="inputNameSquad">
                 <span>Nome Completo 2</span>
             </div>
-            <div class="inputBox inputNameSquad">
-                <input type="text" required="required">
+            <div class="inputBox containerInputNameSquad">
+                <input type="text" required="required" id="inputNameSquad">
                 <span>Nome Completo 3</span>
             </div>
-            <div class="inputBox inputNameSquad">
-                <input type="text" required="required">
+            <div class="inputBox containerInputNameSquad">
+                <input type="text" required="required" id="inputNameSquad">
                 <span>Nome Completo 4</span>
             </div>
-            <div class="inputBox inputNameSquad">
-                <input type="text" required="required">
+            <div class="inputBox containerInputNameSquad">
+                <input type="text" required="required" id="inputNameSquad">
                 <span>Nome Completo 5</span>
             </div>
-            <div class="inputBox inputNameSquad">
-                <input type="text" required="required">
+            <div class="inputBox containerInputNameSquad">
+                <input type="text" required="required" id="inputNameSquad">
                 <span>Nome Completo 6</span>
+            </div>
+        </div>
+        <div class="containerPreco">
+            <div class="containerResumoCompra">
+                <h1 id="resumo_title">Resumo da compra</h1>
+                <p id="resumo_numeroIngressos">1 ingresso para <strong>FAKE PARTY</strong></p>
+                <p id="resumo_nome">No nome de <strong>Pedro Elias Jerusaleno Calabianqui</strong></p>
+                <hr id="hr2">
+                <span>
+                    <p><strong>Valor total:</strong></p>
+                    <p><strong id="resumo_preco">R$ 20,00</strong></p>
+                </span>
             </div>
         </div>
         <div class="informacoesCompra">
@@ -150,6 +162,9 @@
                         <span>CVV</span>
                     </div>
                 </div>
+                <div class="inputBox" style="margin: 26px 0px 0px 0px;">
+                    <input type="button" value="Confirmar" id="btnConfirmarCard">
+                </div>
 
             </div>
             <div id="payboleto" class="containerPay">
@@ -158,23 +173,37 @@
 
             </div>
             <div id="paypix" class="containerPay">
-                <p>Pagamento via pix indisponivel no momento</p>
-                <p>Tente novamente mais tarde!</p>
+                <div class="containerCodPix">
+                    <p>Código Pix</p>
+                    <div id="codPix">
+                        <p>12345123er132d534vct3vft3vt12345123er132d534vct3vft3vt</p>
+                    </div>
+                    <button id="btnCopyPix" onclick="document.getElementById('btnCopyPix').innerHTML = 'Copiado!'">Copiar Código Pix</button>
+                </div>
+                <div class="instrucoesCodPix">
+                    <p><strong>Siga essas instruções</strong></p>
+                    <div>
+                        <span>1</span>
+                        <p>Copie o código Pix acima</p>
+                    </div>
+                    <div>
+                        <span>2</span>
+                        <p>Acesse o app do seu banco de preferência</p>
+                    </div>
+                    <div>
+                        <span>3</span>
+                        <p>Escolha pagar com o Pix, cole o código e finalize o pagamento</p>
+                    </div>
+                    <div>
+                        <span>4</span>
+                        <p>Seu pagamento será aprovado em alguns minutos</p>
+                    </div>
+                </div>
+
 
             </div>
         </div>
-        <footer>
 
-
-            <div>
-                <p>Total:</p>
-                <p>R$ 20,00</p>
-            </div>
-        </footer>
-
-        <p style="text-align: center; position: fixed; width: 100%; bottom: 10px;">
-            versão 0.2
-        </p>
     </main>
 
 

@@ -49,20 +49,31 @@ document.getElementById("inputValidadeCardCard").addEventListener("keypress", fu
 
 function numeroPessoas(n){
     document.querySelector('.selectNumPessoas').style.display = 'none';
+    document.querySelector('#main').style.display = 'block';
+    
+    document.getElementById('resumo_preco').innerHTML = "R$" + n + "0,00"
+
     if (n == "1") {
         document.getElementById("txtNumeroPessoas").innerHTML = "Para " + n + " pessoa";
-        document.getElementById("inputNameSolo").style.display = "block"
-        document.getElementById("inputNameSquad").style.display = "none"
+        document.getElementById("containerInputNameSolo").style.display = "block"
+        document.getElementById("containerInputNameSquad").style.display = "none"
+        document.getElementById('resumo_numeroIngressos').innerHTML = "<strong>" + n + "</strong> ingresso para <strong>FAKE PARTY</strong>"
 
     }else{
+        //se tiver text no campo "nome solo", joga esse value para "nome 1"
+        document.getElementById('resumo_numeroIngressos').innerHTML = "<strong>" + n + "</strong> ingressos para <strong>FAKE PARTY</strong>"        
+        if (document.getElementById("inputNameSolo").value != '') {
+            document.getElementById("inputNameSquad").value =  document.getElementById("inputNameSolo").value
+            
+        }else{
+            document.getElementById("inputNameSquad").value = ''
+        }
+
         document.getElementById("txtNumeroPessoas").innerHTML = "Para " + n + " pessoas";
-        document.getElementById("inputNameSolo").style.display = "none"
-        document.getElementById("inputNameSquad").style.display = "block"
+        document.getElementById("containerInputNameSolo").style.display = "none"
+        document.getElementById("containerInputNameSquad").style.display = "block"
 
-        var listaInputName = document.querySelectorAll(".inputNameSquad")
-
-        console.log("listaInputName: " + listaInputName.length);
-        console.log(typeof(parseInt(n)));
+        var listaInputName = document.querySelectorAll(".containerInputNameSquad")
 
         for (let i1 = 0; i1 < listaInputName.length; i1++) {
             listaInputName[i1].style.display= "none"

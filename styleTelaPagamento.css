@@ -32,10 +32,11 @@ header h1{
     text-transform: uppercase;
 }
 
+main{
+    display: none;
+}
 
-
-.inputBox,
-.containerquantidade{
+.inputBox{
     display: flex;
     flex-direction: column;
     position: relative;
@@ -73,7 +74,7 @@ header h1{
 }
 .selectNumPessoas{
     width: 93%;
-    margin: auto;
+    margin: 0px auto 10px auto;
     box-shadow: 0px 0px 5px black;
     border-radius: 0px 0px 10px 10px;
     display: none;
@@ -137,7 +138,7 @@ header h1{
 .informacoesCompra{
     background-color: hsl(208deg 48% 94%);
     width: 100%;
-    margin: 0px auto 50px auto;
+    margin: 20px auto 50px auto;
     padding: 20px 0px;
 }
 .informacoesPessoais >p,
@@ -145,6 +146,9 @@ header h1{
     text-transform: none;
     width: var(--larguraComum);
     margin: 20px auto;
+}
+.informacoesPessoais >p{
+    margin-top: 40px;
 }
 .informacoesCompra > p{
     text-transform: none;
@@ -274,7 +278,7 @@ header h1{
 hr{
     height: 2px;
     width: 100%;
-    background-color: hsl(208deg 48% 94%);
+    background-color: hsl(210deg 30% 91%);
     display: none;
 }
 .inputBox span,
@@ -311,4 +315,125 @@ hr{
 
 .containerNomes{
     display: none;
+}
+.containerCodPix{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0px;
+}
+.containerCodPix > p{
+    font-weight: bold;
+    margin: 10px;
+}
+.containerCodPix div{
+    background-color: rgb(225 232 239);
+    padding: 14px 20px;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 1px solid rgb(167 173 178);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 0.8em;
+}
+.containerCodPix div p{
+    margin: 0%;
+}
+
+.containerCodPix button{
+    background: none;
+    margin: 10px auto;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--colorSecundary);
+    font-weight: bold;
+    color: var(--colorSecundary);
+    cursor: pointer;
+}
+.containerCodPix button:hover{
+    background-color: var(--colorSecundary);
+    color: aliceblue;
+}
+
+.instrucoesCodPix > p{
+    text-align: left;
+    margin: 16px 0px;
+}
+.instrucoesCodPix div{
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    color: #666;
+}
+.instrucoesCodPix span{
+    background-color: #00000047;
+    padding: 5px 8px;
+    border-radius: 50%;
+    margin-right: 14px;
+    font-size: 0.8em;
+    color: aliceblue;
+}
+.instrucoesCodPix div p{
+    text-align: left;
+    font-size: 0.8em;
+}
+.containerPreco{
+    width: 100%;
+    background-color: #e8f0f7;
+}
+.containerResumoCompra{
+    width: var(--larguraComum);
+    margin: 20px auto;
+    padding: 16px 0px;
+    color: rgb(102, 102, 102);
+}
+.containerResumoCompra h1{
+    font-size: 1.2em;
+    margin-bottom: 14px;
+}
+.containerResumoCompra > p:nth-child(2){
+    margin: 14px 0px;
+}
+
+.containerResumoCompra span{
+    display: flex;
+    justify-content: space-between;
+}
+.containerResumoCompra span p{
+    margin: 0;
+    color: black;
+}
+.containerResumoCompra span p:nth-child(2){
+    font-size: 1.2em;
+}
+#btnConfirmarCard{
+    margin: 0;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--colorSecundary);
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--colorSecundary);
+    color: aliceblue;
+
+}
+#btnConfirmarCard:hover{
+    background: none;
+    color: var(--colorSecundary);
+}
+#resumo_title{
+    display: none;
+}
+#resumo_nome{
+    display: none;
+}
+#hr2{
+    background-color: #e1e8ef;
+    width: 100%;
+    height: 1px;
+    display: block;
+    margin: 14px 0px;
 }
