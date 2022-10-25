@@ -90,10 +90,6 @@ main{
     border-bottom: none;
 }
 
-
-
-
-
 .inputBox span,
 .containerquantidade span{
     position: absolute;
@@ -104,7 +100,6 @@ main{
     color: black;
     transition: 0.5s;
 }
-
 .inputBox input:valid ~ span,
 .inputBox input:focus ~ span{
     transform: translateX(10px) translateY(-7px);
@@ -128,7 +123,6 @@ main{
 }
 .inputBox input:focus{
     border: 1px solid var(--colorSecundary);
-
 }
 .informacoesCompra,
 .informacoesPessoais{
@@ -156,7 +150,6 @@ main{
     margin: 0px auto;
     margin-bottom: 20px;
 }
-
 .ccGZTm {
     display: flex;
     justify-content: space-between;
@@ -199,7 +192,6 @@ main{
     align-content: baseline;
     justify-content: center;
 }
-
 .ccGZTm input {
     display: none;
 }
@@ -298,21 +290,16 @@ hr{
 .containerValiCog .inputBox:nth-child(2){
     margin: 0px 0px 0px 5px;
 }
-
-
 .containerquantidade{
     display: flex;
     flex-direction: column;
     position: relative;
     width: var(--larguraComum);
     margin: 30px auto 0px auto;
-
 }
 .containerquantidade input{
     margin: 0px;
-
 }
-
 .containerNomes{
     display: none;
 }
@@ -341,7 +328,6 @@ hr{
 .containerCodPix div p{
     margin: 0%;
 }
-
 .containerCodPix button{
     background: none;
     margin: 10px auto;
@@ -357,7 +343,6 @@ hr{
     background-color: var(--colorSecundary);
     color: aliceblue;
 }
-
 .instrucoesCodPix > p{
     text-align: left;
     margin: 16px 0px;
@@ -397,7 +382,6 @@ hr{
 .containerResumoCompra > p:nth-child(2){
     margin: 14px 0px;
 }
-
 .containerResumoCompra span{
     display: flex;
     justify-content: space-between;
@@ -418,7 +402,6 @@ hr{
     cursor: pointer;
     background-color: var(--colorSecundary);
     color: aliceblue;
-
 }
 #btnConfirmarCard:hover{
     background: none;
