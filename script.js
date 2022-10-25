@@ -86,3 +86,51 @@ function numeroPessoas(n){
         }
     }
 }
+
+
+
+let inputNameCard = document.getElementById("inputNameCard")
+let inputNumberCard = document.getElementById("inputNumberCard")
+let inputValidadeCard = document.getElementById("inputValidadeCardCard")
+let inputCVVCard = document.getElementById("inputCVVCard")
+
+function btnConfirmarCard(){
+    if (inputNameCard.value == "") {
+        inputNameCard.style.border = "1px solid red"
+    }
+    else if (inputNumberCard.value == "") {
+        inputNumberCard.style.border = "1px solid red"
+    }
+    else if (inputValidadeCard.value == "") {
+        inputValidadeCard.style.border = "1px solid red"
+    }
+    else if (inputCVVCard.value == "") {
+        inputCVVCard.style.border = "1px solid red"
+    }else{
+        //pagar 
+        document.getElementById("modal-root").style.display = "flex";
+        inputNameCard.value = ""
+        inputNumberCard.value = ""
+        inputValidadeCard.value = ""
+        inputCVVCard.value = ""
+    }
+}
+
+inputNameCard.addEventListener("keypress", function(e){
+    inputNameCard.style.border = "1px solid black"
+})
+inputNumberCard.addEventListener("keypress", function(e){
+    inputNumberCard.style.border = "1px solid black"
+})
+inputValidadeCard.addEventListener("keypress", function(e){
+    inputValidadeCard.style.border = "1px solid black"
+})
+inputCVVCard.addEventListener("keypress", function(e){
+    inputCVVCard.style.border = "1px solid black"
+})
+
+document.getElementById("btnCopyPix").addEventListener('click', (e) => {
+    e.preventDefault();
+    
+    navigator.clipboard.writeText('Teste copy pix');
+});

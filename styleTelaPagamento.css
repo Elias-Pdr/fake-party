@@ -417,3 +417,72 @@ hr{
     display: block;
     margin: 14px 0px;
 }
+
+
+
+.new-modal-backdrop.--open {
+    display: flex;
+    opacity: 1;
+    z-index: 11;
+}
+.new-modal-backdrop {
+    padding: 0px;
+    align-items: flex-start;
+    backdrop-filter: blur(2px);
+    position: fixed;
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-box-pack: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+.new-modal-backdrop.--open > .new-modal {
+    opacity: 1;
+    position: relative;
+    z-index: 10;
+}
+.new-modal {
+    width: 100%;
+    --padding: 28px;
+    --closeIconSize: 16px;
+    background-color: rgb(255, 255, 255);
+    padding: var(--padding);
+    border-radius: 8px;
+}
+.center-modal {
+    max-width: 95%;
+    margin: auto;
+}
+.new-modal > .close-icon {
+    cursor: pointer;
+    position: absolute;
+    right: calc(var(--padding) - var(--closeIconSize));
+    top: calc(var(--padding) - var(--closeIconSize));
+    width: var(--closeIconSize);
+    height: auto;
+}
+.--open{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.--open div{
+    background-color: aliceblue;
+    padding: 20px;
+    width: 80%;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+.--open h1{
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+.--open p{
+    color: #666;
+}
+#modal-root{
+    display: none;
+}
