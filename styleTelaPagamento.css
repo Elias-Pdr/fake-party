@@ -129,7 +129,7 @@ main{
 .informacoesCompra{
     background-color: hsl(208deg 48% 94%);
     width: 100%;
-    margin: 20px auto 50px auto;
+    margin: 20px auto 0px auto;
     padding: 20px 0px;
 }
 .informacoesPessoais >p,
@@ -486,3 +486,21 @@ hr{
 #modal-root{
     display: none;
 }
+.containerResumo_numeroIngressos {
+    display: flex;
+}
+.btnConfirmaPagamento{
+    margin: 30px auto;
+    width: var(--larguraComum);
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--colorSecundary);
+    font-weight: bold;
+    cursor: pointer;
+    background-color: var(--colorSecundary);
+    color: aliceblue;  
+    display: none;  
+    align-items: center;
+    justify-content: center;
+}
+

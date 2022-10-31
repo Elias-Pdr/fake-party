@@ -58,11 +58,11 @@ function numeroPessoas(n){
         document.getElementById("txtNumeroPessoas").innerHTML = "Para " + n + " pessoa";
         document.getElementById("containerInputNameSolo").style.display = "block"
         document.getElementById("containerInputNameSquad").style.display = "none"
-        document.getElementById('resumo_numeroIngressos').innerHTML = "<strong>" + n + "</strong> ingresso para <strong>FAKE PARTY</strong>"
+        document.getElementById('resumo_numeroIngressos').innerHTML = "<strong>" + n + "</strong> ingresso para <strong  class='NameEvento'></strong>"
 
     }else{
         //se tiver text no campo "nome solo", joga esse value para "nome 1"
-        document.getElementById('resumo_numeroIngressos').innerHTML = "<strong>" + n + "</strong> ingressos para <strong>FAKE PARTY</strong>"        
+        document.getElementById('resumo_numeroIngressos').innerHTML = "<strong>" + n + "</strong> ingressos para <strong  class='NameEvento'></strong>"        
         if (document.getElementById("inputNameSolo").value != '') {
             document.getElementById("inputNameSquad").value =  document.getElementById("inputNameSolo").value
             
@@ -133,4 +133,5 @@ document.getElementById("btnCopyPix").addEventListener('click', (e) => {
     e.preventDefault();
     
     navigator.clipboard.writeText('Teste copy pix');
+    document.getElementById("btnConfirmaPagamento").style.display = "flex"
 });

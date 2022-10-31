@@ -20,8 +20,12 @@
     </div>
 
     <header>
-        <h1 class="maiusculas">fake party</h1>
+        <h1 class="maiusculas nameEvento"></h1>
     </header>
+
+
+
+
     <div class="containerquantidade">
         <div class="select">
             <input type="button" onclick="document.querySelector('.selectNumPessoas').style.display = 'block'">
@@ -85,7 +89,13 @@
         <div class="containerPreco">
             <div class="containerResumoCompra">
                 <h1 id="resumo_title">Resumo da compra</h1>
-                <p id="resumo_numeroIngressos">1 ingresso para <strong>FAKE PARTY</strong></p>
+
+                <div class="containerResumo_numeroIngressos">
+                    <p id="resumo_numeroIngressos">1 ingresso para
+                        <p style="font-weight: bold; margin-left: 1em;" class="nameEvento">45</p>
+                    </p>
+                </div>
+
                 <p id="resumo_nome">No nome de <strong>Pedro Elias Jerusaleno Calabianqui</strong></p>
                 <hr id="hr2">
                 <span>
@@ -219,8 +229,13 @@
         </div>
 
     </main>
+    
+    <div class="btnConfirmaPagamento" id="btnConfirmaPagamento">
+        <p>Confirmar pagamento</p>
+    </div>
 
 
     <script src="script.js"></script>
+    <script src="root.js"></script>
 </body>
 </html>
